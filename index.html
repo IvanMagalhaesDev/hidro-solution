@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HidroSolution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <img src="img/logo.png" alt="Logo HidroSolution" class="logo-navbar">
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Com a HidroSolution ficou mais fácil melhorar a sua produção!</h1>
+      <p>Calcule de forma rápida e prática a quantidade de solução nutritiva ideal para o crescimento saudável das suas plantas.</p>
+      <a href="#calculadora" class="cta-btn">Calcular Agora</a>
+    </div>
+  </section>
+
+  <section class="how-it-works-section">
+    <div class="container">
+      <h2>Como Funciona</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>📋 Passo 1: Insira os Dados</h3>
+          <p>Informe a condutividade atual, desejada e o volume do reservatório.</p>
+        </div>
+        <div class="step">
+          <h3>🧮 Passo 2: Calcule</h3>
+          <p>Clique em "Calcular" para obter a quantidade exata de solução.</p>
+        </div>
+        <div class="step">
+          <h3>🌿 Passo 3: Aplique</h3>
+          <p>Ajuste a solução no seu sistema e veja suas plantas prosperarem!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <h2>Benefícios da HidroSolution</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <h3>⏳ Economia de Tempo</h3>
+          <p>Automatize cálculos de solução nutritiva e foque em outras tarefas do cultivo.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>💰 Retorno Econômico</h3>
+          <p>Planeje a compra de insumos no momento certo para reduzir custos.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>🌱 Eficiência de Produção</h3>
+          <p>Otimize o crescimento das plantas com doses precisas de nutrientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-content" id="calculadora">
+    <div class="calculator-container">
+      <div class="about">
+        <h2>Sobre a Calculadora</h2>
+        <p><strong>A Calculadora Nutritiva HidroSolution</strong> ajuda você a ajustar a condutividade elétrica da água no seu reservatório de forma fácil. É só inserir a condutividade atual, a que você quer atingir e o volume do reservatório. Com isso, ela calcula a quantidade certa de solução concentrada que você precisa adicionar!</p>
+        <p>Essa ferramenta torna o manejo da hidroponia mais simples, garantindo que suas plantas recebam os nutrientes ideais para crescerem fortes e saudáveis.</p>
+      </div>
+      <div class="calculator-history-wrapper">
+        <div class="calculator">
+          <h3>Bem-vindo à Hidrosolution!</h3>
+          <form id="formCalc">
+            <label for="condLida">Condutividade atual (mS/cm):</label>
+            <input type="number" id="condLida" step="any" required>
+            <label for="condDesejada">Condutividade desejada (mS/cm):</label>
+            <input type="number" id="condDesejada" step="any" required>
+            <label for="volume">Volume do reservatório (L):</label>
+            <input type="number" id="volume" step="any" required>
+            <button type="submit">Calcular</button>
+            <button type="button" id="limpar">Limpar</button>
+          </form>
+        </div>
+        <div class="history">
+          <h3>Histórico de Cálculos</h3>
+          <ul id="historicoCalculos"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="img/footer.png" alt="Logo HidroSolution">
+    <p>© 2025 Copyright: <a href="https://www.plataformacidts.com">www.plataformacidts.com</a> <br> Todos os Direitos Reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

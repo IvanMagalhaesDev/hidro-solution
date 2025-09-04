@@ -1,0 +1,355 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #e0e0e0;
+  color: #222;
+}
+
+/* Navbar Fixa */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #008905;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-navbar {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 104, 10)),
+    url("img/alface.jpg") no-repeat center center/cover;
+  padding-top: 60px;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #027c06;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #388E3C;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Seção de Como Funciona e Benefícios (estilos unificados) */
+.how-it-works-section, .benefits-section {
+  padding: 40px 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.how-it-works-section .container, .benefits-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-it-works-section h2, .benefits-section h2 {
+  color: #228b22;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.steps, .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.step, .benefit-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.step h3, .benefit-item h3 {
+  color: #1a6e1a;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.step p, .benefit-item p {
+  color: #444;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+/* Seção da Calculadora */
+.section-content {
+  padding: 40px 20px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #228b22;
+  margin-bottom: 10px;
+}
+
+.about p strong {
+  color: #1a6e1a;
+}
+
+.calculator-history-wrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.calculator {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: left;
+}
+
+.calculator h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calculator label {
+  font-size: 0.9rem;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.calculator input:focus {
+  outline: 2px solid #228b22;
+  outline-offset: 1px;
+}
+
+.calculator button {
+  background: #228b22;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+#limpar {
+  background: #ccc;
+  margin-top: 8px;
+}
+
+.calculator button:hover {
+  background: #1a6e1a;
+}
+
+#limpar:hover {
+  background: #bbb;
+}
+
+.history {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: left;
+}
+
+.history h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#historicoCalculos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#historicoCalculos li {
+  background: #f5f5f5;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.history-item {
+  margin-bottom: 5px;
+}
+
+.history-item h4 {
+  font-size: 0.85rem;
+  color: #228b22;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.history-item p {
+  margin: 1px 0;
+  font-size: 0.8rem;
+}
+
+.history-item .result {
+  margin-top: 3px;
+}
+
+.history-item .timestamp {
+  font-size: 0.7rem;
+  color: #777;
+  margin-top: 3px;
+}
+
+/* Rodapé */
+footer {
+  background: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+footer img {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 500;
+}
+
+footer a {
+  color: #228b22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .calculator-history-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator, .history {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
